@@ -152,6 +152,16 @@ define Device/8dev_carambola2
 endef
 TARGET_DEVICES += 8dev_carambola2
 
+define Device/8dev_centipede
+  SOC := ar9331
+  DEVICE_VENDOR := 8devices
+  DEVICE_MODEL := Centipede
+  DEVICE_PACKAGES := kmod-usb2 kmod-usb-chipidea2
+  IMAGE_SIZE := 16000k
+  SUPPORTED_DEVICES += centipede
+endef
+TARGET_DEVICES += 8dev_centipede
+
 define Device/adtran_bsap1880
   SOC := ar7161
   DEVICE_VENDOR := Adtran/Bluesocket

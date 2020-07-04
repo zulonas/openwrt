@@ -8,6 +8,7 @@ board=$(board_name)
 boardname="${board##*,}"
 
 case "$board" in
+8dev,centipede|\
 8dev,carambola2)
 	ucidef_set_led_netdev "lan" "LAN" "$boardname:orange:eth0" "eth0"
 	ucidef_set_led_switch "wan" "WAN" "$boardname:orange:eth1" "switch0" "0x04"
